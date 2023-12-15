@@ -5,10 +5,7 @@ function insertionSort(array) {
         if (array[i + 1] < array[i]) {
             temp = array[i + 1];
             for (let j = i; j >= 0; j--) {
-                if (array[j] < temp) {
-                    break;
-                }
-                else {
+                if (array[j] > temp) {
                     array[j + 1] = array[j];
                     array[j] = temp;
                 }
