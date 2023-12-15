@@ -7,6 +7,8 @@ function insertionSort(array: number[]): number[] {
         if (array[j] > temp) {
           array[j + 1] = array[j];
           array[j] = temp;
+        } else {
+          break;
         }
       }
     }
